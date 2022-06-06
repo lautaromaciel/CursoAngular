@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from "@angular/common/http"
 
 import { AppComponent } from './app.component';
+import { PaisModule } from './pais/pais.module';
 import { SharedModule } from './shared/shared.module';
-import { GifsModule } from './gifs/gifs.module';
+
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -15,9 +16,9 @@ import { GifsModule } from './gifs/gifs.module';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    PaisModule,
     SharedModule,
-    GifsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
