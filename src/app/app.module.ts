@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule} from "@angular/common/http"
 
 import { AppComponent } from './app.component';
-import { PaisModule } from './pais/pais.module';
-import { SharedModule } from './shared/shared.module';
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
@@ -20,8 +17,6 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    PaisModule,
-    SharedModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule
