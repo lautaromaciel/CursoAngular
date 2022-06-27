@@ -30,7 +30,6 @@ export class VerPaisComponent implements OnInit {
     )
     .subscribe(respuesta => this.pais = respuesta);
 
-
   }
 
 }
