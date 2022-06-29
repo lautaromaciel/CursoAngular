@@ -1,4 +1,7 @@
-.bandera{
-  width: 100%;
-  box-sizing: border-box;
+head,body{
+  margin: 1rem;
+  padding: 0;
+  background-color:var(--surface-b) ;
+  font-family:var(--font-family) ;
+  color: var(--text-color);
 }
