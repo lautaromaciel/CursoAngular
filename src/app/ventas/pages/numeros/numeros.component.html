@@ -1,0 +1,85 @@
+<h1>Pipes Decimales y Porcentaje</h1>
+
+<p>Estan incluidos en el Common Module de Angular</p>
+
+<div class="p-grid">
+  <div class="p-col-6">
+    <p-card
+    header="Ventas Netas"
+    subheader="Ventas Netas del Año"
+    >
+    <ul>
+      <li>ventasNetas | number</li>
+      <li>ventasNetas | number : "1.2-2"</li>
+      <li>ventasNetas | number : "1.0-0"</li>
+    </ul>
+    </p-card>
+  </div>
+
+  <div class="p-col-6">
+    <p-card
+    header="Ventas Netas"
+    subheader="Ventas Netas del Año"
+    >
+    <ul>
+      <li>{{ventasNetas | number }}</li>
+      <li>{{ventasNetas | number : "1.2-2" }}</li>
+      <li>{{ventasNetas | number : "1.0-0" }}</li>
+    </ul>
+    </p-card>
+  </div>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-6">
+    <p-card
+    header="Ventas Brutas"
+    subheader="Ventas Brutas del Año"
+    >
+    <ul>
+      <li>ventasNetas | currency</li>
+      <li>ventasNetas | currency: "Peso"</li>
+      <li>ventasNetas | currency: "US":"symbol-narrow"</li>
+    </ul>
+    </p-card>
+  </div>
+
+  <div class="p-col-6">
+    <p-card
+    header="Ventas Brutas"
+    subheader="Ventas Brutas del Año"
+    >
+    <ul>
+      <li>{{ventasNetas + 2000000 | currency }}</li>
+      <li>{{ventasNetas + 2000000 | currency: "Peso" }}</li>
+      <li>{{ventasNetas + 2000000 | currency: "US":"symbol-narrow" }}</li>
+    </ul>
+    </p-card>
+  </div>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-6">
+    <p-card
+    header="Pipe Percent"
+    subheader="Ganancia Porcentual"
+    >
+    <ul>
+      <li>porcentaje | percent</li>
+      <li>porcentaje | percent:"2.2-2"</li>
+    </ul>
+    </p-card>
+  </div>
+
+  <div class="p-col-6">
+    <p-card
+    header="Pipe Percent"
+    subheader="Ganancia Porcentual"
+    >
+    <ul>
+      <li>{{porcentaje | percent }}</li>
+      <li>{{porcentaje + .0056 | percent:"2.2-2" }}</li>
+    </ul>
+    </p-card>
+  </div>
+</div>

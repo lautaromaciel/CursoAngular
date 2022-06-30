@@ -1,13 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import {HttpClientModule} from "@angular/common/http"
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
-import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
-import {ButtonModule} from 'primeng/button';
-import {Card, CardModule} from 'primeng/card';
+
+import { SharedModule } from './shared/shared.module';
+import { VentasModule } from './ventas/ventas.module';
+import { AppRouterModule } from './app-router.module';
+
+/* Cambiar el local de la app */
+import localeEspañol from "@angular/common/locales/es-AR";
+import localeFrances from "@angular/common/locales/fr";
+import { registerLocaleData} from "@angular/common";
+registerLocaleData(localeEspañol);
+registerLocaleData(localeFrances);
 
 
 
@@ -19,13 +27,16 @@ import {Card, CardModule} from 'primeng/card';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ButtonModule,
-    CardModule
+    SharedModule,
+    VentasModule,
+    AppRouterModule
   ],
-  providers: [],
+  providers: [
+    /* Poner españo Argentina como global */
+    {provide: LOCALE_ID , useValue : "es-AR"}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
