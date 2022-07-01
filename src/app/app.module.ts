@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-import {ButtonModule} from 'primeng/button';
-import {Card, CardModule} from 'primeng/card';
 
 
 
@@ -21,9 +19,7 @@ import {Card, CardModule} from 'primeng/card';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    ButtonModule,
-    CardModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
