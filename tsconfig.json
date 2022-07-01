@@ -4,6 +4,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    /* Strict Mode */
+
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -17,4 +19,5 @@
       "dom"
     ]
   }
+
 }

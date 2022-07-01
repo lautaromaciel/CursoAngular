@@ -24,13 +24,13 @@ export class MenuComponent implements OnInit {
           },
           {label : "No comunes",
             routerLink : "noComunes"
-          },
-          {label : "Ordenar",
-            routerLink : "ordenar"
           }
         ]
       },
-      {label : "Pipes Personalizados"}
+      {
+        label : "Pipes Personalizados",
+        routerLink : "ordenar"
+      }
     ];
 
 

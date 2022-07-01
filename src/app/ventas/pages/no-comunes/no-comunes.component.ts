@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
 
+
+
+
 @Component({
   selector: 'app-no-comunes',
   templateUrl: './no-comunes.component.html',
   styleUrls: ['./no-comunes.component.css']
 })
 export class NoComunesComponent implements OnInit {
+
 
   /* i18n select */
   nombre:string = "Lautaro";
